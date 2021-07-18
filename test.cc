@@ -6,6 +6,8 @@
 #include "common/noncopyable.h"
 #include "common/own_strings.h"
 #include "timer/timer.h"
+#include "logger/Log.h"
+#include "MapUtil.h"
 
 // 默认是private继承，禁止运行时多态即 wzq::NonCopyAble x = new Test(); 会出现编译错误
 class Test : wzq::NonCopyAble {
@@ -49,6 +51,9 @@ void TestTimerQueue() {
 }
 
 int main() {
+    debug("Hello world!!!");
+    testMap();
+
     TestTimerQueue();
     return 0;
     Test a;

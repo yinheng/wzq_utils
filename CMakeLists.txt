@@ -13,12 +13,14 @@ include_directories(${CMAKE_SOURCE_DIR}
                     ${CMAKE_SOURCE_DIR}/thread/include/
                     ${CMAKE_SOURCE_DIR}/timer/include/
                     ${CMAKE_SOURCE_DIR}/singleton/include/
+                    ${CMAKE_SOURCE_DIR}/map/
                     ${CMAKE_SOURCE_DIR}/common/include/)
 
 add_subdirectory(thread)
 add_subdirectory(singleton)
+add_subdirectory(logger)
 
 add_executable(test_wzq test.cc)
-target_link_libraries(test_wzq pthread)
+target_link_libraries(test_wzq pthread yh_logger)
 
 # target_link_libraries(test_thread wzq_thread)
