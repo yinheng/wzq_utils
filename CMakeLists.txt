@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(wzq_utils)
 
-message( STATUS "CMake version ${CMAKE_VERSION}" )
+message (STATUS "CMake version ${CMAKE_VERSION}" )
 message (STATUS "source dir: ${CMAKE_SOURCE_DIR}")
 message (STATUS "build type: ${CMAKE_BUILD_TYPE}")
 message (STATUS "compiler: ${CMAKE_CXX_COMPILER}")
+
 
 set (CMAKE_CXX_FLAGS "--std=c++17")
 
